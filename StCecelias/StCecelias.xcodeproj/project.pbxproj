@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B4166A81CEF240C00C1FED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166A71CEF240C00C1FED7 /* AppDelegate.swift */; };
+		3B4166AA1CEF240C00C1FED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166A91CEF240C00C1FED7 /* ViewController.swift */; };
+		3B4166AD1CEF240C00C1FED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4166AB1CEF240C00C1FED7 /* Main.storyboard */; };
+		3B4166AF1CEF240C00C1FED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4166AE1CEF240C00C1FED7 /* Assets.xcassets */; };
+		3B4166B21CEF240C00C1FED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4166B01CEF240C00C1FED7 /* LaunchScreen.storyboard */; };
+		3B4166BD1CEF240C00C1FED7 /* StCeceliasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166BC1CEF240C00C1FED7 /* StCeceliasTests.swift */; };
+		3B4166C81CEF240C00C1FED7 /* StCeceliasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166C71CEF240C00C1FED7 /* StCeceliasUITests.swift */; };
+		3B4166DB1CEF24A100C1FED7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166DA1CEF24A100C1FED7 /* Constants.swift */; };
+		3B4166DD1CEF24CC00C1FED7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166DC1CEF24CC00C1FED7 /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B4166B91CEF240C00C1FED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B41669C1CEF240C00C1FED7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B4166A31CEF240C00C1FED7;
+			remoteInfo = StCecelias;
+		};
+		3B4166C41CEF240C00C1FED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B41669C1CEF240C00C1FED7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B4166A31CEF240C00C1FED7;
+			remoteInfo = StCecelias;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B4166A41CEF240C00C1FED7 /* StCecelias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StCecelias.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4166A71CEF240C00C1FED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B4166A91CEF240C00C1FED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B4166AC1CEF240C00C1FED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B4166AE1CEF240C00C1FED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B4166B11CEF240C00C1FED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B4166B31CEF240C00C1FED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4166B81CEF240C00C1FED7 /* StCeceliasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StCeceliasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4166BC1CEF240C00C1FED7 /* StCeceliasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StCeceliasTests.swift; sourceTree = "<group>"; };
+		3B4166BE1CEF240C00C1FED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4166C31CEF240C00C1FED7 /* StCeceliasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StCeceliasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4166C71CEF240C00C1FED7 /* StCeceliasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StCeceliasUITests.swift; sourceTree = "<group>"; };
+		3B4166C91CEF240C00C1FED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4166DA1CEF24A100C1FED7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3B4166DC1CEF24CC00C1FED7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B4166A11CEF240C00C1FED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4166B51CEF240C00C1FED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4166C01CEF240C00C1FED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B41669B1CEF240C00C1FED7 = {
+			isa = PBXGroup;
+			children = (
+				3B4166A61CEF240C00C1FED7 /* StCecelias */,
+				3B4166BB1CEF240C00C1FED7 /* StCeceliasTests */,
+				3B4166C61CEF240C00C1FED7 /* StCeceliasUITests */,
+				3B4166A51CEF240C00C1FED7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B4166A51CEF240C00C1FED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B4166A41CEF240C00C1FED7 /* StCecelias.app */,
+				3B4166B81CEF240C00C1FED7 /* StCeceliasTests.xctest */,
+				3B4166C31CEF240C00C1FED7 /* StCeceliasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B4166A61CEF240C00C1FED7 /* StCecelias */ = {
+			isa = PBXGroup;
+			children = (
+				3B4166D51CEF244000C1FED7 /* Supporting Files */,
+				3B4166D61CEF244F00C1FED7 /* Views */,
+				3B4166D71CEF247600C1FED7 /* Models */,
+				3B4166D81CEF247F00C1FED7 /* Controllers */,
+				3B4166D91CEF248F00C1FED7 /* Utils */,
+				3B4166A71CEF240C00C1FED7 /* AppDelegate.swift */,
+				3B4166A91CEF240C00C1FED7 /* ViewController.swift */,
+				3B4166AE1CEF240C00C1FED7 /* Assets.xcassets */,
+				3B4166B01CEF240C00C1FED7 /* LaunchScreen.storyboard */,
+				3B4166B31CEF240C00C1FED7 /* Info.plist */,
+			);
+			path = StCecelias;
+			sourceTree = "<group>";
+		};
+		3B4166BB1CEF240C00C1FED7 /* StCeceliasTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B4166BC1CEF240C00C1FED7 /* StCeceliasTests.swift */,
+				3B4166BE1CEF240C00C1FED7 /* Info.plist */,
+			);
+			path = StCeceliasTests;
+			sourceTree = "<group>";
+		};
+		3B4166C61CEF240C00C1FED7 /* StCeceliasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B4166C71CEF240C00C1FED7 /* StCeceliasUITests.swift */,
+				3B4166C91CEF240C00C1FED7 /* Info.plist */,
+			);
+			path = StCeceliasUITests;
+			sourceTree = "<group>";
+		};
+		3B4166D51CEF244000C1FED7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B4166D61CEF244F00C1FED7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B4166AB1CEF240C00C1FED7 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3B4166D71CEF247600C1FED7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3B4166D81CEF247F00C1FED7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B4166DC1CEF24CC00C1FED7 /* HomeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3B4166D91CEF248F00C1FED7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3B4166DA1CEF24A100C1FED7 /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B4166A31CEF240C00C1FED7 /* StCecelias */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4166CC1CEF240C00C1FED7 /* Build configuration list for PBXNativeTarget "StCecelias" */;
+			buildPhases = (
+				3B4166A01CEF240C00C1FED7 /* Sources */,
+				3B4166A11CEF240C00C1FED7 /* Frameworks */,
+				3B4166A21CEF240C00C1FED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StCecelias;
+			productName = StCecelias;
+			productReference = 3B4166A41CEF240C00C1FED7 /* StCecelias.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B4166B71CEF240C00C1FED7 /* StCeceliasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4166CF1CEF240C00C1FED7 /* Build configuration list for PBXNativeTarget "StCeceliasTests" */;
+			buildPhases = (
+				3B4166B41CEF240C00C1FED7 /* Sources */,
+				3B4166B51CEF240C00C1FED7 /* Frameworks */,
+				3B4166B61CEF240C00C1FED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B4166BA1CEF240C00C1FED7 /* PBXTargetDependency */,
+			);
+			name = StCeceliasTests;
+			productName = StCeceliasTests;
+			productReference = 3B4166B81CEF240C00C1FED7 /* StCeceliasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B4166C21CEF240C00C1FED7 /* StCeceliasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4166D21CEF240C00C1FED7 /* Build configuration list for PBXNativeTarget "StCeceliasUITests" */;
+			buildPhases = (
+				3B4166BF1CEF240C00C1FED7 /* Sources */,
+				3B4166C01CEF240C00C1FED7 /* Frameworks */,
+				3B4166C11CEF240C00C1FED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B4166C51CEF240C00C1FED7 /* PBXTargetDependency */,
+			);
+			name = StCeceliasUITests;
+			productName = StCeceliasUITests;
+			productReference = 3B4166C31CEF240C00C1FED7 /* StCeceliasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B41669C1CEF240C00C1FED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Edina;
+				TargetAttributes = {
+					3B4166A31CEF240C00C1FED7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					3B4166B71CEF240C00C1FED7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3B4166A31CEF240C00C1FED7;
+					};
+					3B4166C21CEF240C00C1FED7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3B4166A31CEF240C00C1FED7;
+					};
+				};
+			};
+			buildConfigurationList = 3B41669F1CEF240C00C1FED7 /* Build configuration list for PBXProject "StCecelias" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B41669B1CEF240C00C1FED7;
+			productRefGroup = 3B4166A51CEF240C00C1FED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B4166A31CEF240C00C1FED7 /* StCecelias */,
+				3B4166B71CEF240C00C1FED7 /* StCeceliasTests */,
+				3B4166C21CEF240C00C1FED7 /* StCeceliasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B4166A21CEF240C00C1FED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4166B21CEF240C00C1FED7 /* LaunchScreen.storyboard in Resources */,
+				3B4166AF1CEF240C00C1FED7 /* Assets.xcassets in Resources */,
+				3B4166AD1CEF240C00C1FED7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4166B61CEF240C00C1FED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4166C11CEF240C00C1FED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B4166A01CEF240C00C1FED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4166AA1CEF240C00C1FED7 /* ViewController.swift in Sources */,
+				3B4166A81CEF240C00C1FED7 /* AppDelegate.swift in Sources */,
+				3B4166DB1CEF24A100C1FED7 /* Constants.swift in Sources */,
+				3B4166DD1CEF24CC00C1FED7 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4166B41CEF240C00C1FED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4166BD1CEF240C00C1FED7 /* StCeceliasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4166BF1CEF240C00C1FED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4166C81CEF240C00C1FED7 /* StCeceliasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B4166BA1CEF240C00C1FED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B4166A31CEF240C00C1FED7 /* StCecelias */;
+			targetProxy = 3B4166B91CEF240C00C1FED7 /* PBXContainerItemProxy */;
+		};
+		3B4166C51CEF240C00C1FED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B4166A31CEF240C00C1FED7 /* StCecelias */;
+			targetProxy = 3B4166C41CEF240C00C1FED7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B4166AB1CEF240C00C1FED7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B4166AC1CEF240C00C1FED7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B4166B01CEF240C00C1FED7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B4166B11CEF240C00C1FED7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B4166CA1CEF240C00C1FED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B4166CB1CEF240C00C1FED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B4166CD1CEF240C00C1FED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StCecelias/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.edina.stcecelias.StCecelias;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B4166CE1CEF240C00C1FED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StCecelias/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.edina.stcecelias.StCecelias;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B4166D01CEF240C00C1FED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StCeceliasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.edina.stcecelias.StCeceliasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StCecelias.app/StCecelias";
+			};
+			name = Debug;
+		};
+		3B4166D11CEF240C00C1FED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StCeceliasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.edina.stcecelias.StCeceliasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StCecelias.app/StCecelias";
+			};
+			name = Release;
+		};
+		3B4166D31CEF240C00C1FED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StCeceliasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.edina.stcecelias.StCeceliasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StCecelias;
+			};
+			name = Debug;
+		};
+		3B4166D41CEF240C00C1FED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StCeceliasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.edina.stcecelias.StCeceliasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StCecelias;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B41669F1CEF240C00C1FED7 /* Build configuration list for PBXProject "StCecelias" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4166CA1CEF240C00C1FED7 /* Debug */,
+				3B4166CB1CEF240C00C1FED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4166CC1CEF240C00C1FED7 /* Build configuration list for PBXNativeTarget "StCecelias" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4166CD1CEF240C00C1FED7 /* Debug */,
+				3B4166CE1CEF240C00C1FED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B4166CF1CEF240C00C1FED7 /* Build configuration list for PBXNativeTarget "StCeceliasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4166D01CEF240C00C1FED7 /* Debug */,
+				3B4166D11CEF240C00C1FED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B4166D21CEF240C00C1FED7 /* Build configuration list for PBXNativeTarget "StCeceliasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4166D31CEF240C00C1FED7 /* Debug */,
+				3B4166D41CEF240C00C1FED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B41669C1CEF240C00C1FED7 /* Project object */;
+}
