@@ -28,6 +28,7 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireImage (~> 2.0)
   - AlamofireObjectMapper (~> 3.0)
+  - DATAStack
   - Sync
 
 SPEC CHECKSUMS:
