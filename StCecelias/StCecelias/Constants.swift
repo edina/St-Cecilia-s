@@ -11,10 +11,14 @@ import UIKit
 
 struct Constants {
     
+    struct Entity {
+        static let collection =  "Collection"
+    }
     struct SegueIDs {
         
     }
     struct ReuseIDs {
-        
+        static let collectionCell = "collectionCell"
+        static let itemCell = "itemCell"
     }
 }

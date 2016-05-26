@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 class CollectionsTableViewController: UITableViewController {
 
+    var collections = [Collection]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let request = NSFetchRequest(entityName: Constants.Entity.collection)
+        collections = (try! self.dataStack.mainContext.executeFetchRequest(request)) as! [Collection]
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +35,26 @@ class CollectionsTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.collections.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(Constants.ReuseIDs.collectionCell, forIndexPath: indexPath)
 
-        // Configure the cell...
+        let collection = self.collections[indexPath.row]
+        cell.textLabel?.text = collection.name
+        cell.detailTextLabel?.text = collection.desc
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

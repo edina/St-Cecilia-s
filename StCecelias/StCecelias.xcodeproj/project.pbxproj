@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B13D1501CF5DD0E00492600 /* St_Cecelias.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B13D14E1CF5DD0E00492600 /* St_Cecelias.xcdatamodeld */; };
+		3B13D1531CF5DDCE00492600 /* Collection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13D1511CF5DDCE00492600 /* Collection+CoreDataProperties.swift */; };
+		3B13D1541CF5DDCE00492600 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13D1521CF5DDCE00492600 /* Collection.swift */; };
 		3B4166A81CEF240C00C1FED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166A71CEF240C00C1FED7 /* AppDelegate.swift */; };
 		3B4166AA1CEF240C00C1FED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166A91CEF240C00C1FED7 /* ViewController.swift */; };
 		3B4166AD1CEF240C00C1FED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4166AB1CEF240C00C1FED7 /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		2BE03E33F3E5CA2700651510 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3B13D14F1CF5DD0E00492600 /* St_Cecelias.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = St_Cecelias.xcdatamodel; sourceTree = "<group>"; };
+		3B13D1511CF5DDCE00492600 /* Collection+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3B13D1521CF5DDCE00492600 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		3B4166A41CEF240C00C1FED7 /* StCecelias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StCecelias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4166A71CEF240C00C1FED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B4166A91CEF240C00C1FED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 				3B4166AE1CEF240C00C1FED7 /* Assets.xcassets */,
 				3B4166B01CEF240C00C1FED7 /* LaunchScreen.storyboard */,
 				3B4166B31CEF240C00C1FED7 /* Info.plist */,
+				3B13D14E1CF5DD0E00492600 /* St_Cecelias.xcdatamodeld */,
 			);
 			path = StCecelias;
 			sourceTree = "<group>";
@@ -175,6 +182,8 @@
 		3B4166D71CEF247600C1FED7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3B13D1511CF5DDCE00492600 /* Collection+CoreDataProperties.swift */,
+				3B13D1521CF5DDCE00492600 /* Collection.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -395,8 +404,11 @@
 				3B4166DB1CEF24A100C1FED7 /* Constants.swift in Sources */,
 				3B4166E11CEF4E2E00C1FED7 /* CollectionsTableViewController.swift in Sources */,
 				3B4166DF1CEF4C6100C1FED7 /* AboutViewController.swift in Sources */,
+				3B13D1501CF5DD0E00492600 /* St_Cecelias.xcdatamodeld in Sources */,
+				3B13D1541CF5DDCE00492600 /* Collection.swift in Sources */,
 				3B4166DD1CEF24CC00C1FED7 /* HomeViewController.swift in Sources */,
 				3B4166E31CEF4F0200C1FED7 /* CollectionItemTableViewController.swift in Sources */,
+				3B13D1531CF5DDCE00492600 /* Collection+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +660,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B13D14E1CF5DD0E00492600 /* St_Cecelias.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B13D14F1CF5DD0E00492600 /* St_Cecelias.xcdatamodel */,
+			);
+			currentVersion = 3B13D14F1CF5DD0E00492600 /* St_Cecelias.xcdatamodel */;
+			path = St_Cecelias.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B41669C1CEF240C00C1FED7 /* Project object */;
 }
