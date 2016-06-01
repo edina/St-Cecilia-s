@@ -35,117 +35,163 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 [
                     "name" : "Andreas Hartmann-Virnich Collection",
                     "id" : "1",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 22,
+                    "items" : [
+                        [
+                            "id": 1,
+                            "name": "item1Name",
+                            "desc": "desc1"
+                        ],
+                        [
+                            "id": 2,
+                            "name": "item12Name",
+                            "desc": "desc12"
+                        ]
+                    ]
                 ],
                 [
                     "name" : "Blades Collection",
                     "id" : "2",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 156,
+                    "items" : [
+                        [
+                            "id": 3,
+                            "name": "item2Name",
+                            "desc": "desc1"
+                        ],
+                        [
+                            "id": 4,
+                            "name": "item2Name",
+                            "desc": "desc2"
+                        ]
+                    ]
                 ],
                 [
                     "name" : "C.H. Brackenbury Memorial Collection",
                     "id" : "3",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 192
                 ],
                 [
                     "name" : "Farmer Collection",
                     "id" : "4",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 1
                 ],
                 [
                     "name" : "Frank Tomes Collection",
                     "id" : "5",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 63
                 ],
                 [
                     "name" : "Galpin Society Collection",
                     "id" : "6",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 8
                 ],
                 [
                     "name" : "Glen Collection",
                     "id" : "7",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 237
                 ],
                 [
                     "name" : "Handling Collection",
                     "id" : "9",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 15
                 ],
                 [
                     "name" : "John Donaldson Collection",
                     "id" : "10",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 3
                 ],
                 [
                     "name" : "Kilravock Castle Collection",
                     "id" : "11",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 2
                 ],
                 [
                     "name" : "Langwill Collection",
                     "id" : "12",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 10
                 ],
                 [
                     "name" : "Macaulay Collection",
                     "id" : "13",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 54
                 ],
                 [
                     "name" : "Mickleburgh Collection",
                     "id" : "14",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 73
                 ],
                 [
                     "name" : "MIMEd",
                     "id" : "15",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 5075
                 ],
                 [
                     "name" : "Object Lessons",
                     "id" : "16",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 6
                 ],
                 [
                     "name" : "Raymond Russell Collection",
                     "id" : "17",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 21
                 ],
                 [
                     "name" : "Reid Collection",
                     "id" : "18",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 231
                 ],
                 [
                     "name" : "Rendall Collection",
                     "id" : "19",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 119
                 ],
                 [
                     "name" : "Rodger Mirrey Collection",
                     "id" : "20",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 23
                 ],
                 [
                     "name" : "Ross Collection",
                     "id" : "21",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 208
                 ],
                 [
                     "name" : "Shaw-Hellier Collection",
                     "id" : "22",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 54
                 ],
                 [
                     "name" : "Sir Nicholas Shackleton Collection",
                     "id" : "23",
-                    "desc" : ""
+                    "desc" : "",
+                    "count" : 997
                 ]
             ]
             
             self.createCollectionObjects(entity, backgroundContext: backgroundContext, collections: collections)
-                   
+            
             try! backgroundContext.save()
         }
     }
@@ -153,14 +199,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func createCollectionObjects(entity: NSEntityDescription, backgroundContext: NSManagedObjectContext, collections: [[String:Any]]) {
         
+        
+        let itemEntity = NSEntityDescription.entityForName(Constants.Entity.item, inManagedObjectContext: backgroundContext)!
+        
         for collection in collections{
-            let object = NSManagedObject(entity: entity, insertIntoManagedObjectContext: backgroundContext)
-            object.setValue(collection["name"] as? String, forKey: "name")
-            object.setValue(collection["id"] as? String, forKey: "id")
-            object.setValue(collection["desc"] as? String, forKey: "desc")
+            let collectionObject = NSManagedObject(entity: entity, insertIntoManagedObjectContext: backgroundContext)
+            collectionObject.setValue(collection["name"] as? String, forKey: "name")
+            collectionObject.setValue(collection["id"] as? String, forKey: "id")
+            collectionObject.setValue(collection["desc"] as? String, forKey: "desc")
+            collectionObject.setValue(collection["count"] as? Int, forKey: "count")
+            
+            // Add any items to the collection
+            if let items = collection["items"] as? [[String:NSObject]]{
+                
+                for item in items {
+                    let itemObject = NSManagedObject(entity: itemEntity, insertIntoManagedObjectContext: backgroundContext)
+                    
+                    if let name = item["name"]{
+                        itemObject.setValue(name, forKey: "name")
+                    }
+                    if let id = item["id"]{
+                        itemObject.setValue(id, forKey: "id")
+                    }
+                    if let desc = item["desc"]{
+                        itemObject.setValue(desc, forKey: "desc")
+                    }
+                                        
+                    let manyRelation = collectionObject.mutableSetValueForKey("items")
+                    manyRelation.addObject(itemObject)
+
+                }
+            }
         }
-        
-        
     }
     
     

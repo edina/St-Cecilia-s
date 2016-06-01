@@ -1,5 +1,5 @@
 //
-//  CollectionItemTableViewController.swift
+//  CollectionItemsTableViewController.swift
 //  StCecelias
 //
 //  Created by Colin Gormley on 20/05/2016.
@@ -8,11 +8,17 @@
 
 import UIKit
 
-class CollectionItemTableViewController: UITableViewController {
+class CollectionItemsTableViewController: UITableViewController {
 
+    var collection: Collection?
+    var items: NSSet?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = collection?.name
+        self.items = self.collection?.items
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +35,34 @@ class CollectionItemTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
+        if let items = self.items {
+            return items.count
+        }
         return 0
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(Constants.ReuseIDs.itemCell, forIndexPath: indexPath)
+        
+        if let items = self.items{
+            let itemsArray = Array(items)
+            if let item = itemsArray[indexPath.row] as? Item{
+                cell.textLabel?.text = item.name
+                cell.detailTextLabel?.text = item.desc
+            }
+        }
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -17,6 +17,8 @@ class CollectionsTableViewController: UITableViewController {
         super.viewDidLoad()
 
         let request = NSFetchRequest(entityName: Constants.Entity.collection)
+        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        
         collections = (try! self.dataStack.mainContext.executeFetchRequest(request)) as! [Collection]
         
         // Uncomment the following line to preserve selection between presentations
@@ -50,8 +52,8 @@ class CollectionsTableViewController: UITableViewController {
 
         let collection = self.collections[indexPath.row]
         cell.textLabel?.text = collection.name
-        cell.detailTextLabel?.text = collection.desc
-
+        cell.detailTextLabel?.text = collection.count?.stringValue
+        
         return cell
     }
     
@@ -91,14 +93,21 @@ class CollectionsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == Constants.SegueIDs.showCollectionItems {
+            if let destination = segue.destinationViewController as? CollectionItemsTableViewController {
+                if let collectionIndex = tableView.indexPathForSelectedRow?.row {
+                    destination.collection = self.collections[collectionIndex]
+                }
+            }
+        }
     }
-    */
+    
 
 }

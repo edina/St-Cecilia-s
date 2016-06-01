@@ -13,9 +13,10 @@ struct Constants {
     
     struct Entity {
         static let collection =  "Collection"
+        static let item =  "Item"
     }
     struct SegueIDs {
-        
+        static let showCollectionItems = "showCollectionItems"
     }
     struct ReuseIDs {
         static let collectionCell = "collectionCell"
