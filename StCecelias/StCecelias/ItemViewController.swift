@@ -10,10 +10,22 @@ import UIKit
 
 class ItemViewController: UIViewController {
 
+    
+    var item: Item?
+    
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
+        self.title = self.item?.name
+        
+        let url = NSURL (string: "http://collections.ed.ac.uk/mimed/search/*/Collection:%22mimed%7C%7C%7CMIMEd%22")
+        let requestObj = NSURLRequest(URL: url!);
+        self.webView.loadRequest(requestObj)
+        
     }
 
     override func didReceiveMemoryWarning() {
