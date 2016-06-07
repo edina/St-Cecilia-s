@@ -24,6 +24,8 @@
 		3B4166E11CEF4E2E00C1FED7 /* CollectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166E01CEF4E2E00C1FED7 /* CollectionsTableViewController.swift */; };
 		3B4166E31CEF4F0200C1FED7 /* CollectionItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166E21CEF4F0200C1FED7 /* CollectionItemsTableViewController.swift */; };
 		3B4166E51CEF4F3F00C1FED7 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4166E41CEF4F3F00C1FED7 /* ItemViewController.swift */; };
+		3B766C8C1D070563003BC2A8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B766C8B1D070563003BC2A8 /* CoreLocation.framework */; };
+		3B766C8E1D070571003BC2A8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B766C8D1D070571003BC2A8 /* CoreBluetooth.framework */; };
 		D1DE1A9C7CD4A9E6DE611F56 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF95C2F0849C92B0BDAF205 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,7 @@
 		3B13D1521CF5DDCE00492600 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		3B13D1571CFC6FE400492600 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3B13D1581CFC6FE400492600 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3B13D15D1D06C33200492600 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		3B4166A41CEF240C00C1FED7 /* StCecelias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StCecelias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4166A71CEF240C00C1FED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B4166AC1CEF240C00C1FED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		3B4166E01CEF4E2E00C1FED7 /* CollectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsTableViewController.swift; sourceTree = "<group>"; };
 		3B4166E21CEF4F0200C1FED7 /* CollectionItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionItemsTableViewController.swift; sourceTree = "<group>"; };
 		3B4166E41CEF4F3F00C1FED7 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		3B766C8B1D070563003BC2A8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3B766C8D1D070571003BC2A8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		4FF95C2F0849C92B0BDAF205 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76F4D921D7CF8D8189EB0A2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B766C8E1D070571003BC2A8 /* CoreBluetooth.framework in Frameworks */,
+				3B766C8C1D070563003BC2A8 /* CoreLocation.framework in Frameworks */,
 				D1DE1A9C7CD4A9E6DE611F56 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +175,7 @@
 		3B4166D51CEF244000C1FED7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B13D15D1D06C33200492600 /* ObjCBridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,6 +222,8 @@
 		72C490A81F974CA5D0D4D9D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B766C8D1D070571003BC2A8 /* CoreBluetooth.framework */,
+				3B766C8B1D070563003BC2A8 /* CoreLocation.framework */,
 				4FF95C2F0849C92B0BDAF205 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -508,6 +518,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -547,6 +558,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -557,6 +569,10 @@
 			baseConfigurationReference = A76F4D921D7CF8D8189EB0A2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StCecelias/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -570,6 +586,10 @@
 			baseConfigurationReference = 2BE03E33F3E5CA2700651510 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StCecelias/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

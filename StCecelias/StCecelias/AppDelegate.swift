@@ -9,6 +9,7 @@
 import UIKit
 import DATAStack
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -22,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        // TODO: put your App ID and App Token here
+        // You can get them by adding your app on https://cloud.estimote.com/#/apps
+        ESTConfig.setupAppID("St Cecelias", andAppToken: "<#App Token#>")
+        
         self.createCollections()
         return true
     }

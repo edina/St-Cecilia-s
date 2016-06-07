@@ -151,6 +151,11 @@ Licensed under the **MIT** license
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+## EstimoteSDK
+
+Copyright 2015 Estimote, Inc. All rights reserved.
+
+
 ## NSDictionary-ANDYSafeValue
 
 Licensed under the **MIT** license

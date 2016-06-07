@@ -188,6 +188,15 @@ SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright 2015 Estimote, Inc. All rights reserved.
+</string>
+			<key>Title</key>
+			<string>EstimoteSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Licensed under the **MIT** license
 
 &gt; Copyright (c) 2015 Elvis Nu&#241;ez
