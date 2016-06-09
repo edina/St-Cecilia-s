@@ -43,37 +43,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     "name" : "Andreas Hartmann-Virnich Collection",
                     "id" : "1",
                     "desc" : "",
-                    "count" : 22,
-                    "items" : [
-                        [
-                            "id": 1,
-                            "name": "item1Name",
-                            "desc": "desc1"
-                        ],
-                        [
-                            "id": 2,
-                            "name": "item12Name",
-                            "desc": "desc12"
-                        ]
-                    ]
+                    "count" : 22
                 ],
                 [
                     "name" : "Blades Collection",
                     "id" : "2",
                     "desc" : "",
-                    "count" : 156,
-                    "items" : [
-                        [
-                            "id": 3,
-                            "name": "item2Name",
-                            "desc": "desc1"
-                        ],
-                        [
-                            "id": 4,
-                            "name": "item2Name",
-                            "desc": "desc2"
-                        ]
-                    ]
+                    "count" : 156
                 ],
                 [
                     "name" : "C.H. Brackenbury Memorial Collection",
@@ -205,10 +181,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func createCollectionObjects(entity: NSEntityDescription, backgroundContext: NSManagedObjectContext, collections: [[String:Any]]) {
-        
-        
-        let itemEntity = NSEntityDescription.entityForName(Constants.Entity.item, inManagedObjectContext: backgroundContext)!
-        
+               
         for collection in collections{
             let collectionObject = NSManagedObject(entity: entity, insertIntoManagedObjectContext: backgroundContext)
             collectionObject.setValue(collection["name"] as? String, forKey: "name")
@@ -216,27 +189,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             collectionObject.setValue(collection["desc"] as? String, forKey: "desc")
             collectionObject.setValue(collection["count"] as? Int, forKey: "count")
             
-            // Add any items to the collection
-            if let items = collection["items"] as? [[String:NSObject]]{
-                
-                for item in items {
-                    let itemObject = NSManagedObject(entity: itemEntity, insertIntoManagedObjectContext: backgroundContext)
-                    
-                    if let name = item["name"]{
-                        itemObject.setValue(name, forKey: "name")
-                    }
-                    if let id = item["id"]{
-                        itemObject.setValue(id, forKey: "id")
-                    }
-                    if let desc = item["desc"]{
-                        itemObject.setValue(desc, forKey: "desc")
-                    }
-                                        
-                    let manyRelation = collectionObject.mutableSetValueForKey("items")
-                    manyRelation.addObject(itemObject)
-
-                }
-            }
         }
     }
     

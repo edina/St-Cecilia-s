@@ -1,31 +1,21 @@
 //
-//  ItemViewController.swift
+//  InfoViewController.swift
 //  StCecelias
 //
-//  Created by Colin Gormley on 20/05/2016.
+//  Created by Colin Gormley on 09/06/2016.
 //  Copyright © 2016 Edina. All rights reserved.
 //
 
 import UIKit
 
-class ItemViewController: UIViewController {
+class InfoViewController: UIViewController {
 
-    
-    var item: Item?
-    
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
-        
-        self.title = self.item?.name
-        
-        let url = NSURL (string: "http://collections.ed.ac.uk/mimed/search/*/Collection:%22mimed%7C%7C%7CMIMEd%22")
-        let requestObj = NSURLRequest(URL: url!);
-        self.webView.loadRequest(requestObj)
-        
     }
 
     override func didReceiveMemoryWarning() {

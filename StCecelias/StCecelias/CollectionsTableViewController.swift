@@ -100,13 +100,13 @@ class CollectionsTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == Constants.SegueIDs.showCollectionItems {
-            if let destination = segue.destinationViewController as? CollectionItemsTableViewController {
-                if let collectionIndex = tableView.indexPathForSelectedRow?.row {
-                    destination.collection = self.collections[collectionIndex]
-                }
-            }
-        }
+//        if segue.identifier == Constants.SegueIDs.showCollectionItems {
+//            if let destination = segue.destinationViewController as? CollectionItemsTableViewController {
+//                if let collectionIndex = tableView.indexPathForSelectedRow?.row {
+//                    destination.collection = self.collections[collectionIndex]
+//                }
+//            }
+//        }
     }
     
 

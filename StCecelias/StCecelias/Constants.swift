@@ -17,7 +17,7 @@ struct Constants {
     }
     struct SegueIDs {
         static let showCollectionItems = "showCollectionItems"
-        static let showItem = "showItem"
+        static let showInfo = "showInfo"
     }
     struct ReuseIDs {
         static let collectionCell = "collectionCell"
