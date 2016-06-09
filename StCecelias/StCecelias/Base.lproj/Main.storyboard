@@ -105,7 +105,7 @@
         <!--Info-->
         <scene sceneID="RIh-qt-AmN">
             <objects>
-                <viewController title="Info" id="KJg-UQ-Evt" customClass="InfoViewController" customModule="StCecelias" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoViewController" title="Info" id="KJg-UQ-Evt" customClass="InfoViewController" customModule="StCecelias" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xuu-oT-76d"/>
                         <viewControllerLayoutGuide type="bottom" id="GrT-pq-KbK"/>

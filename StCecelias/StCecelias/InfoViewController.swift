@@ -15,6 +15,10 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let url = NSURL (string: "http://collections.ed.ac.uk/mimed/search/*/Collection:%22mimed%7C%7C%7CMIMEd%22")
+        let requestObj = NSURLRequest(URL: url!);
+        self.webView.loadRequest(requestObj)
+        
         // Do any additional setup after loading the view.
     }
 
